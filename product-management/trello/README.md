@@ -12,17 +12,20 @@ is important. Trello responds well to changing the structure of the process
 Our product management process with [Trello](http://trello.com) can span multiple
 Trello boards:
 
-* Bugs
-* Product Design
-* Engineering & Refactoring
-* Current
+* Product Design (Backlog)
+* Current Dev
 
-![Current](http://f.cl.ly/items/3H3i1M0Q1G1s2V3I433S/Screen%20Shot%202013-02-25%20at%209.08.22%20AM.png)
+![Current](http://mctekk.com/git/trello_1.png)
 
-"Current" is an example of a board. "In Progress" is an example of a list. "Set
-up Splunk for logging" is an example of a card.
+"Current" is an example of a board. "In Progress" is an example of a list. "User Feeds" is an example of a card.
 
-Cards from Product Design, Bugs, Engineering boards are pulled into the Next Up
+* Next Up
+* Doing
+* Offline Revision
+* Online Revision (Ready for Production)
+* Done (Week X)
+
+Cards from Product Design are pulled into the Next Up
 list on the Current board as described in the "Weekly Product Meeting" section
 below.
 
@@ -56,39 +59,22 @@ bug is not critical, it stays in Bugs until the next product meeting.
 
 A bug has steps to reproduce the bug and optionally a screenshot or screencast.
 
-Product Design
+Product Design (BackLog)
 --------------
 
 The cards on this board lists are the result of sketching user flows, usability
 tests, other user research, or the designer's feel for visual design
 improvements. There are multiple lists on this board:
 
-* Next Up
-* User Stories
+* Features Description
 * User Experience
 * Ready for Next Up
-
-Engineering & Refactoring
--------------------------
-
-The cards on this board are refactorings and other engineering tasks necessary
-to fix bugs or improve the user experience. "Response time" is a primary user
-experience goal on every app. There are multiple lists on this board:
-
-* Reported
-* Needs Clarification
-* Ready for Next Up
-
-If an engineering task is labeled Critical, then it is pulled immediately to
-Next Up. If the task is not critical, it stays in Refactoring & Engineering
-until the next product meeting.
 
 Weekly Product Meeting (1-2 hours)
 ----------------------------------
 
-On Friday (or Thursday if that's the end of the team's week) afternoon, the
-product manager, designer, and lead developer meet in person or via Google
-Hangout. They load the product on a screen, focus on recent changes to it, and
+On Monday, the product manager and lead developer meet in person. 
+They load the product on a screen, focus on recent changes to it, and
 use the working app and Trello boards to plan the upcoming week's iteration. The
 product manager runs the meeting like this:
 
@@ -101,53 +87,32 @@ product manager runs the meeting like this:
 * Review the Bugs board. Pull any important bugs into Next Up and prioritize
   then at the top of the queue before everything else. We want to always be
   fixing what's broken first.
-* Review the Engineering & Refactoring board. Pull cards into Next Up based on
-  what the designers and developers believe is appropriate given the previously
-  stated Product Design, and Bugs.
 
-Weekly Planning Meeting (30 minutes)
-------------------------------------
-
-On Monday morning, everyone meets in-person or via Google Hangout.
-
-The goal is to make sure everyone knows what's going on with the product and to
-celebrate the work of team members. The product manager runs this meeting like
-this:
-
-* Review the cards that went live last week, taking 30 seconds to describe each
-  card, and congratulate those who worked on them, showing their avatar.
-* Review the cards in Next Up. Clarify any questions about them.
 
 Building and Shipping
 ---------------------
 
-![Shipping](http://f.cl.ly/items/2h2d2Z1z0X3s0n3d3y0R/Screen%20Shot%202012-12-02%20at%2010.03.44%20AM.png)
+![Shipping](http://mctekk.com/git/trello_2.png)
 
 The cards in the Next Up list are prioritized, vetted, and ready for design &
-development. A designer or developer "puts their face on it" by assigning it to
-themselves and pulling it into the In Progress list.
+development. A designer or developer "puts their face on it" if the taks doesnt have anybody assign to it, then the devs can
+do it themselves and pulling it into the In Progress list.
 
 Designers and developers may pull any card out of Next Up that they feel they
 can handle, but should consider the cards are prioritized by importance.
 
-The cards in the In Progress list are actively being designed or developed.
+The cards in the Doing list are actively being designed or developed.
 Etiquette is that you should never have your face on more than two cards at a
 time. Work is done in a [feature branch](/protocol).
 
 When a designer or developer creates a pull request for their feature branch,
-they move the card to the Code Review list. Any reviewers "put their face on it"
+they move the card to the Offline Revision. Any reviewers "put their face on it"
 while reviewing.
 
 There is no central chokepoint for merging into master: everyone can do it.
 
-The cards in the Testing on Staging (or Testing on Ad Hoc build for iPhone apps)
-list are deployed to staging (or distributed via TestFlight for iPhone apps).
-The card creator and a designer review it for accuracy and user experience.
-
-There is no central chokepoint for deploying to staging: everyone can do it.
-
-The cards in the Ready for Production list include cards that have been accepted
-on staging and are ready to be deployed (but not necessarily rolled out).
+The cards in the Online Revision (Ready for Production) list include cards that have been accepted
+on staging (Offline Revision) and are ready to be deployed (but not necessarily rolled out).
 
 There is no central chokepoint for releasing to production: everyone can do it.
 
