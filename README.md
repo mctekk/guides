@@ -13,8 +13,8 @@ Guides for getting things done, programming well, and programming in style.
 Credits
 -------
 
-Thank for the inspiration, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
+Thank to [thoughtbot] for the inspiration, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+![mctekk](http://mctekk.com/images/logo.png)
 
 Guides is maintained by [mctekk](http://mctekk.com).
