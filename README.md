@@ -3,11 +3,11 @@ Guides
 
 Guides for getting things done, programming well, and programming in style.
 
-* [Protocol](working on)(/protocol)
-* [Code Review](working on)(/code-review)
+* [Protocol](/protocol)
+* [Code Review](/code-review)
 * [Product Management](/product-management/trello)
-* [Best Practices](working on)(/best-practices)
-* [Style](working on)(/style)
+* [Best Practices](/best-practices)
+* [Style](/style)
 
 
 Credits
