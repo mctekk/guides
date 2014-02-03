@@ -15,7 +15,7 @@ Trello boards:
 * Product Design (Backlog)
 * Current Dev
 
-![Current](http://mctekk.com/git/trello_1.png)
+![Current](http://www.mctekk.com/git/trello_1.png)
 
 "Current" is an example of a board. "In Progress" is an example of a list. "User Feeds" is an example of a card.
 
@@ -92,7 +92,7 @@ product manager runs the meeting like this:
 Building and Shipping
 ---------------------
 
-![Shipping](http://mctekk.com/git/trello_2.png)
+![Shipping](http://www.mctekk.com/git/trello_2.png)
 
 The cards in the Next Up list are prioritized, vetted, and ready for design &
 development. A designer or developer "puts their face on it" if the taks doesnt have anybody assign to it, then the devs can
